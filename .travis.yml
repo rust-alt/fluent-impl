@@ -1,0 +1,54 @@
+language: rust
+
+rust:
+  - nightly
+# - stable
+# - beta
+
+os:
+  - linux
+  - osx
+
+env:
+  - BADGE=linux_nightly
+  - BADGE=osx_nightly
+# - BADGE=linux_stable
+# - BADGE=osx_stable
+# - BADGE=linux_beta
+# - BADGE=osx_beta
+
+matrix:
+  exclude: # exclude everything
+    - rust: nightly
+  # - rust: stable
+  # - rust: beta
+  include: # include what we want
+    - name: "linux-nightly"
+      os: linux
+      rust: nightly
+      env: BADGE=linux-nightly
+    - name: "osx-nightly"
+      os: osx
+      rust: nightly
+      env: BADGE=osx-nightly
+  # - name: "linux-stable"
+  #   os: linux
+  #   rust: stable
+  #   env: BADGE=linux-stable
+  # - name: "osx-stable"
+  #   os: osx
+  #   rust: stable
+  #   env: BADGE=osx-stable
+  # - name: "linux-beta"
+  #   os: linux
+  #   rust: beta
+  #   env: BADGE=linux-beta
+  # - name: "osx-beta"
+  #   os: osx
+  #   rust: beta
+  #   env: BADGE=osx-beta
+
+sudo: false
+script:
+  - cargo test
+  - cargo doc

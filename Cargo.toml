@@ -1,0 +1,27 @@
+[package]
+name = "fluent-impl"
+description = "A procedural macro that generates chaining methods from non-chaining ones in an impl block"
+version = "0.1.0"
+authors = ["Mohammad AlSaleh <CE.Mohammad.AlSaleh@gmail.com>"]
+license = "MPL 2.0"
+readme = "README.md"
+repository = "https://github.com/rust-alt/fluent-impl"
+homepage = "https://github.com/rust-alt/fluent-impl"
+documentation = "https://docs.rs/fluent-impl"
+categories = [ "rust-patterns" ]
+keywords = [ "api", "attribute", "proc-macro", "fluent", "chaining", "builder" ]
+
+[badges]
+appveyor = { repository = "rust-alt/fluent-impl" }
+travis-ci = { repository = "rust-alt/fluent-impl" }
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = { version = "0.14", features = ["full", "extra-traits"] }
+quote = "0.6"
+proc-macro2 = "0.4"
+
+[dev-dependencies]
+compiletest_rs = "0.3"

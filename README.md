@@ -1,4 +1,5 @@
-# fluent-impl [![Travis Build Status](https://api.travis-ci.org/rust-alt/fluent-impl.svg?branch=master)](https://travis-ci.org/rust-alt/fluent-impl) [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/rust-alt/fluent-impl?svg=true&branch=master)](https://ci.appveyor.com/project/MoSal/fluent-impl)
+# fluent-impl [![Travis Build Status](https://api.travis-ci.org/rust-alt/fluent-impl.svg?branch=master)](https://travis-ci.org/rust-alt/fluent-impl) [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/rust-alt/fluent-impl?svg=true&branch=master)](https://ci.appveyor.com/project/MoSal/fluent-impl) [![Documentation](https://docs.rs/fluent-impl/badge.svg)](https://docs.rs/fluent-impl) [![Crate](https://img.shields.io/crates/v/fluent-impl.svg)](https://crates.io/fluent-impl)
+
 
 
 ## Detailed Build Status

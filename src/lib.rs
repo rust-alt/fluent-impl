@@ -9,7 +9,7 @@
     file, You can obtain one at <http://mozilla.org/MPL/2.0/>.
 */
 
-// TODO: README and Travis
+// TODO: README
 // TODO: Change git repo to version if we publish
 
 //! A procedural macro that generates chaining methods from non-chaining ones in an impl block.
@@ -27,7 +27,7 @@
 //!
 //! ``` toml
 //! [dependencies]
-//! fluent-impl = { git = "https://github.com/rust-alt/fluent-impl.git" }
+//! fluent-impl = "0.1"
 //! ```
 //!
 //! Then add the following to the top of `src/lib.rs`:

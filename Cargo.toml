@@ -7,7 +7,7 @@ license = "MPL-2.0"
 readme = "README.md"
 repository = "https://github.com/rust-alt/fluent-impl"
 homepage = "https://github.com/rust-alt/fluent-impl"
-documentation = "https://docs.rs/fluent-impl"
+documentation = "https://rust-alt.github.io/fluent-impl/doc/fluent_impl"
 categories = [ "rust-patterns" ]
 keywords = [ "api", "attribute", "proc-macro", "fluent", "chaining" ]
 

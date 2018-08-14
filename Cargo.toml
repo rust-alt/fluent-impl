@@ -12,7 +12,6 @@ categories = [ "rust-patterns" ]
 keywords = [ "api", "attribute", "proc-macro", "fluent", "chaining" ]
 
 [badges]
-appveyor = { repository = "rust-alt/fluent-impl" }
 travis-ci = { repository = "rust-alt/fluent-impl" }
 
 [lib]

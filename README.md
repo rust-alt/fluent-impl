@@ -9,7 +9,33 @@ in search for chain-able methods, and generate chaining methods from them.
 Chain-able methods are the ones with `&mut self` as a first argument, and return nothing.
 That's it, there are no other restrictions.
 
-## Usage
+# Detailed Build Status
+
+`fluent_impl` remains nightly-only, for now. The feature `use_extern_macros` is
+[supposedly days away from stabilisation](https://github.com/rust-lang/rust/pull/50911).
+
+
+## Travis
+
+| ___Linux___ | ___OSX___ |
+|:----:|:----:|
+| ![linux-nightly](https://badges.herokuapp.com/travis/rust-alt/fluent-impl?env=BADGE=linux-nightly&label=linux%20nightly) | ![osx-nightly](https://badges.herokuapp.com/travis/rust-alt/fluent-impl?env=BADGE=osx-nightly&label=%20%20osx%20nightly) |
+| ![linux-beta](https://badges.herokuapp.com/travis/rust-alt/fluent-impl?env=BADGE=linux-beta&label=%20linux%20beta%20%20) | ![osx-beta](https://badges.herokuapp.com/travis/rust-alt/fluent-impl?env=BADGE=osx-beta&label=%20%20%20osx%20beta%20%20) |
+| ![linux-stable](https://badges.herokuapp.com/travis/rust-alt/fluent-impl?env=BADGE=linux-stable&label=linux%20stable%20) | ![osx-stable](https://badges.herokuapp.com/travis/rust-alt/fluent-impl?env=BADGE=osx-stable&label=%20osx%20%20stable%20) |
+
+## AppVeyor
+
+Failure could be caused by a bug in [compiletest-rs](https://github.com/laumann/compiletest-rs)
+(I'm not sure). Feedback from Windows users would be greatly appreciated.
+
+| Windows | x86_64 | i686 |
+|:-------:|:------:|:----:|
+| __nightly__ | ![nightly x86_64](https://appveyor-matrix-badges.herokuapp.com/repos/MoSal/fluent-impl/branch/master/1) | ![nightly i686](https://appveyor-matrix-badges.herokuapp.com/repos/MoSal/fluent-impl/branch/master/2) |
+| __beta__   | ![beta x86_64](https://appveyor-matrix-badges.herokuapp.com/repos/MoSal/fluent-impl/branch/master/5) | ![beta i686](https://appveyor-matrix-badges.herokuapp.com/repos/MoSal/fluent-impl/branch/master/6) | 
+| __stable__ | ![satble x86_64](https://appveyor-matrix-badges.herokuapp.com/repos/MoSal/fluent-impl/branch/master/3) | ![stable i686](https://appveyor-matrix-badges.herokuapp.com/repos/MoSal/fluent-impl/branch/master/4) |
+
+
+# Usage
 
 Add `fluent-impl` to the dependencies in `Cargo.toml`:
 
@@ -51,10 +77,6 @@ impl Simple {
 Then we add the macro attribute to the impl block:
 
 ``` rust ignore
-# #![feature(use_extern_macros)]
-# extern crate fluent_impl;
-# use fluent_impl::{fluent_impl, fluent_impl_opts};
-# struct Simple;
 #[fluent_impl]
 impl Simple {
     // ...
@@ -308,22 +330,3 @@ fn main() {
     assert_eq!(tc2, tc1);
 }
 ```
-
-## Detailed Build Status
-
-### Travis
-
-| ___Linux___ | ___OSX___ |
-|:----:|:----:|
-| ![linux-nightly](https://badges.herokuapp.com/travis/rust-alt/fluent-impl?env=BADGE=linux-nightly&label=linux%20nightly) | ![osx-nightly](https://badges.herokuapp.com/travis/rust-alt/fluent-impl?env=BADGE=osx-nightly&label=%20%20osx%20nightly) |
-| ![linux-beta](https://badges.herokuapp.com/travis/rust-alt/fluent-impl?env=BADGE=linux-beta&label=%20linux%20beta%20%20) | ![osx-beta](https://badges.herokuapp.com/travis/rust-alt/fluent-impl?env=BADGE=osx-beta&label=%20%20%20osx%20beta%20%20) |
-| ![linux-stable](https://badges.herokuapp.com/travis/rust-alt/fluent-impl?env=BADGE=linux-stable&label=linux%20stable%20) | ![osx-stable](https://badges.herokuapp.com/travis/rust-alt/fluent-impl?env=BADGE=osx-stable&label=%20osx%20%20stable%20) |
-
-### AppVeyor
-
-| Windows | x86_64 | i686 |
-|:-------:|:------:|:----:|
-| __nightly__ | ![nightly x86_64](https://appveyor-matrix-badges.herokuapp.com/repos/MoSal/fluent-impl/branch/master/1) | ![nightly i686](https://appveyor-matrix-badges.herokuapp.com/repos/MoSal/fluent-impl/branch/master/2) |
-| __beta__   | ![beta x86_64](https://appveyor-matrix-badges.herokuapp.com/repos/MoSal/fluent-impl/branch/master/5) | ![beta i686](https://appveyor-matrix-badges.herokuapp.com/repos/MoSal/fluent-impl/branch/master/6) | 
-| __stable__ | ![satble x86_64](https://appveyor-matrix-badges.herokuapp.com/repos/MoSal/fluent-impl/branch/master/3) | ![stable i686](https://appveyor-matrix-badges.herokuapp.com/repos/MoSal/fluent-impl/branch/master/4) |
-

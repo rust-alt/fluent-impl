@@ -9,7 +9,7 @@ repository = "https://github.com/rust-alt/fluent-impl"
 homepage = "https://github.com/rust-alt/fluent-impl"
 documentation = "https://docs.rs/fluent-impl"
 categories = [ "rust-patterns" ]
-keywords = [ "api", "attribute", "proc-macro", "fluent", "chaining", "builder" ]
+keywords = [ "api", "attribute", "proc-macro", "fluent", "chaining" ]
 
 [badges]
 appveyor = { repository = "rust-alt/fluent-impl" }

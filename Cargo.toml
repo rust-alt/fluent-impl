@@ -1,7 +1,7 @@
 [package]
 name = "fluent-impl"
 description = "A procedural macro that generates chaining methods from non-chaining ones in an impl block"
-version = "0.1.1"
+version = "0.1.2"
 authors = ["Mohammad AlSaleh <CE.Mohammad.AlSaleh@gmail.com>"]
 license = "MPL-2.0"
 readme = "README.md"

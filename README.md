@@ -6,9 +6,9 @@
 ### Travis
 
 | ___Linux___ | ___OSX___ |
+|:----:|:----:|
 | ![linux-nightly](https://badges.herokuapp.com/travis/rust-alt/fluent-impl?env=BADGE=linux-nightly&label=linux%20nightly) | ![osx-nightly](https://badges.herokuapp.com/travis/rust-alt/fluent-impl?env=BADGE=osx-nightly&label=%20%20osx%20nightly) |
 | ![linux-beta](https://badges.herokuapp.com/travis/rust-alt/fluent-impl?env=BADGE=linux-beta&label=%20linux%20beta%20%20) | ![osx-beta](https://badges.herokuapp.com/travis/rust-alt/fluent-impl?env=BADGE=osx-beta&label=%20%20%20osx%20beta%20%20) |
-|:----:|:----:|
 | ![linux-stable](https://badges.herokuapp.com/travis/rust-alt/fluent-impl?env=BADGE=linux-stable&label=linux%20stable%20) | ![osx-stable](https://badges.herokuapp.com/travis/rust-alt/fluent-impl?env=BADGE=osx-stable&label=%20osx%20%20stable%20) |
 
 ### AppVeyor

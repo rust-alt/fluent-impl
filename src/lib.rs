@@ -9,9 +9,6 @@
     file, You can obtain one at <http://mozilla.org/MPL/2.0/>.
 */
 
-// TODO: README
-// TODO: Change git repo to version if we publish
-
 //! A procedural macro that generates chaining methods from non-chaining ones in an impl block.
 //!
 //!

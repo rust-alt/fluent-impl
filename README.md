@@ -28,9 +28,6 @@ That's it, there are no other restrictions.
 
 ## AppVeyor
 
-Failure could be caused by a bug in [compiletest-rs](https://github.com/laumann/compiletest-rs)
-(I'm not sure). Feedback from Windows users would be greatly appreciated.
-
 | Windows | x86_64 | i686 |
 |:-------:|:------:|:----:|
 | __nightly__ | ![nightly x86_64](https://appveyor-matrix-badges.herokuapp.com/repos/MoSal/fluent-impl/branch/master/1) | ![nightly i686](https://appveyor-matrix-badges.herokuapp.com/repos/MoSal/fluent-impl/branch/master/2) |

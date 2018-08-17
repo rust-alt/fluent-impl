@@ -1,4 +1,4 @@
-# fluent-impl [![Crate](https://img.shields.io/crates/v/fluent-impl.svg)](https://crates.io/crates/fluent-impl) [![Travis Build Status](https://api.travis-ci.org/rust-alt/fluent-impl.svg?branch=master)](https://travis-ci.org/rust-alt/fluent-impl)
+# fluent-impl [![Crate](https://img.shields.io/crates/v/fluent-impl.svg)](https://crates.io/crates/fluent-impl) [![Travis Build Status](https://api.travis-ci.org/rust-alt/fluent-impl.svg?branch=master)](https://travis-ci.org/rust-alt/fluent-impl) [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/rust-alt/fluent-impl?svg=true&branch=master)](https://ci.appveyor.com/project/MoSal/fluent-impl)
 
 
 [**Documentation**](https://rust-alt.github.io/fluent-impl/doc/fluent_impl/)
@@ -28,10 +28,8 @@ That's it, there are no other restrictions.
 
 ## AppVeyor
 
-AppVeyor Windows builds are failing now when running tests. This is probably caused by
-a bug in [compiletest-rs](https://github.com/laumann/compiletest-rs). The crate
-should work just fine on Windows. Having said that, feedback from Windows users
-would be greatly appreciated.
+Failure could be caused by a bug in [compiletest-rs](https://github.com/laumann/compiletest-rs)
+(I'm not sure). Feedback from Windows users would be greatly appreciated.
 
 | Windows | x86_64 | i686 |
 |:-------:|:------:|:----:|

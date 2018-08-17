@@ -11,7 +11,7 @@ fn run_mode(mode: &'static str) {
     config.src_base = PathBuf::from(format!("tests/{}", mode));
     // Try populating rustflags directly to avoid compiletest-rs #81
     // config.link_deps(); // Populate config.target_rustcflags with dependencies on the path
-    config.target_rustcflags = Some("-L target/debug".to_string());
+    config.target_rustcflags = Some("-L target/debug -L target/debug/deps".to_string());
     config.clean_rmeta(); // If your tests import the parent crate, this helps with E0464
 
     compiletest::run_tests(&config);

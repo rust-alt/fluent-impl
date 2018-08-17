@@ -142,11 +142,11 @@
 //!  * **`impl_doc`** (default: "Chaining (fluent) methods for [\`%t%\`].")
 //!
 //!    If a new block is generated for the chaining methods, this is the doc string template
-//!    for it. `%t%` is is replaced with the type path.
+//!    for it. `%t%` is replaced with the type path.
 //!
 //!  * **`doc`** (default: "The chaining (fluent) equivalent of [\`%f%()\`].")
 //!
-//!    Chaining method doc string template. `%t%` is is replaced with the type path. `%f%` is
+//!    Chaining method doc string template. `%t%` is replaced with the type path. `%f%` is
 //!    replaced with the chain-able method name.
 //!
 //!    Additionally, the following is effectively appended at the end:
@@ -228,7 +228,7 @@
 //!
 //!    Set the name of the chaining method.
 //!
-//!    * *`name`* is not allowed to be set if method-specific *`prefix`* or rename is set.
+//!    * *`name`* is not allowed to be set if method-specific *`prefix`* or *`rename`* is set.
 //!
 //!
 //! # Full Example

@@ -1,4 +1,3 @@
-#![feature(use_extern_macros)]
 #![feature(proc_macro_expr)]
 #![feature(stmt_expr_attributes)]
 

@@ -30,9 +30,6 @@
 //! Then add the following to the top of `src/lib.rs`:
 //!
 //! ``` rust ignore
-//! // Will be stabilized soon
-//! #![feature(use_extern_macros)]
-//!
 //! extern crate fluent_impl;
 //!
 //! use fluent_impl::{fluent_impl, fluent_impl_opts};
@@ -60,7 +57,6 @@
 //! Then we add the macro attribute to the impl block:
 //!
 //! ``` rust ignore
-//! # #![feature(use_extern_macros)]
 //! # extern crate fluent_impl;
 //! # use fluent_impl::{fluent_impl, fluent_impl_opts};
 //! # struct Simple;
@@ -234,8 +230,6 @@
 //! # Full Example
 //!
 //! ``` rust
-//! #![feature(use_extern_macros)]
-//!
 //! extern crate fluent_impl;
 //!
 //! pub mod m {

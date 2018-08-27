@@ -14,9 +14,9 @@ That's it, there are no other restrictions.
 
 # Detailed Build Status
 
-`fluent_impl` remains nightly-only, for now. The feature `use_extern_macros` is
-[supposedly days away from stabilisation](https://github.com/rust-lang/rust/pull/50911).
-
+`fluent_impl` remains nightly-only, for now. The feature `use_extern_macros` has been
+stabilized. And fluent-impl will work in beta and stable when the 1.30 release propagates
+to those channels.
 
 ## Travis
 
@@ -47,9 +47,6 @@ fluent-impl = "0.1"
 Then add the following to the top of `src/lib.rs`:
 
 ``` rust ignore
-// Will be stabilized soon
-#![feature(use_extern_macros)]
-
 extern crate fluent_impl;
 
 use fluent_impl::{fluent_impl, fluent_impl_opts};
@@ -247,8 +244,6 @@ impl Simple {
 # Full Example
 
 ``` rust
-#![feature(use_extern_macros)]
-
 extern crate fluent_impl;
 
 pub mod m {

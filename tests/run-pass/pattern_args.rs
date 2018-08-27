@@ -1,5 +1,3 @@
-#![feature(use_extern_macros)]
-
 extern crate fluent_impl;
 
 pub mod m {

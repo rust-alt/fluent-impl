@@ -1,4 +1,4 @@
-extern crate fluent_impl;
+extern crate fluent_impl; //~ ERROR
 
 pub mod simple {
     use fluent_impl::{fluent_impl, fluent_impl_opts};
@@ -8,7 +8,7 @@ pub mod simple {
         num: i32,
     }
 
-    #[fluent_impl] //~ ERROR
+    #[fluent_impl]
     #[fluent_impl_opts]
     impl Simple {
         pub fn new(n: i32) -> Self {

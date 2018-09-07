@@ -106,15 +106,15 @@ fn get_generic_params(generics: &Generics) -> Punctuated<Ident, Comma> {
         match param {
             GenericParam::Lifetime(l) => {
                 ret.push_value(l.lifetime.ident.clone());
-                ret.push_punct(Comma::new(Span::call_site()));
+                ret.push_punct(Token!(,)(Span::call_site()));
             },
             GenericParam::Const(p) => {
                 ret.push_value(p.ident.clone());
-                ret.push_punct(Comma::new(Span::call_site()));
+                ret.push_punct(Token!(,)(Span::call_site()));
             },
             GenericParam::Type(t) => {
                 ret.push_value(t.ident.clone());
-                ret.push_punct(Comma::new(Span::call_site()));
+                ret.push_punct(Token!(,)(Span::call_site()));
             },
         }
     }
@@ -147,17 +147,17 @@ fn get_call_args(inputs: &Punctuated<FnArg, Comma>) -> Punctuated<Expr, Comma> {
                 let pat = &cap.pat;
                 let expr: Expr = parse_quote! { #pat };
                 ret.push_value(expr);
-                ret.push_punct(Comma::new(Span::call_site()));
+                ret.push_punct(Token!(,)(Span::call_site()));
             },
             FnArg::Inferred(pat) => {
                 let expr: Expr = parse_quote! { #pat };
                 ret.push_value(expr);
-                ret.push_punct(Comma::new(Span::call_site()));
+                ret.push_punct(Token!(,)(Span::call_site()));
             },
             FnArg::Ignored(ty) => {
                 let expr: Expr = parse_quote! { #ty };
                 ret.push_value(expr);
-                ret.push_punct(Comma::new(Span::call_site()));
+                ret.push_punct(Token!(,)(Span::call_site()));
             },
         }
     }

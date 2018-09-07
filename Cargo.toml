@@ -19,7 +19,7 @@ travis-ci = { repository = "rust-alt/fluent-impl" }
 proc-macro = true
 
 [dependencies]
-syn = { version = "0.14", features = ["full", "extra-traits"] }
+syn = { version = "0.15", features = ["full", "extra-traits"] }
 quote = "0.6"
 proc-macro2 = "0.4"
 

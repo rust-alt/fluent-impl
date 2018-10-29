@@ -1,4 +1,4 @@
-#![feature(proc_macro_expr)]
+#![feature(proc_macro_hygiene)]
 #![feature(stmt_expr_attributes)]
 
 extern crate fluent_impl;
@@ -21,8 +21,8 @@ pub mod simple {
         }
 
         pub fn add_1(&mut self) {
-#[fluent_impl_opts] //~ ERROR
-            self.num +=1;
+            #[fluent_impl_opts]
+            self.num +=1; //~ ERROR
         }
     }
 }

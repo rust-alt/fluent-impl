@@ -3,8 +3,8 @@ extern crate fluent_impl;
 pub mod simple {
     use fluent_impl::{fluent_impl, fluent_impl_opts};
 
-    #[derive(Default, PartialEq, Debug)]
     #[fluent_impl] //~ ERROR
+    #[derive(Default, PartialEq, Debug)]
     pub struct Simple {
         num: i32,
     }

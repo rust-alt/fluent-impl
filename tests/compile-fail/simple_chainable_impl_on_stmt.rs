@@ -1,4 +1,4 @@
-#![feature(proc_macro_expr)]
+#![feature(proc_macro_hygiene)]
 #![feature(stmt_expr_attributes)]
 
 extern crate fluent_impl;

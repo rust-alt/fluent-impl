@@ -1,11 +1,11 @@
-#![feature(proc_macro_mod)]
+#![feature(proc_macro_hygiene)]
 
 extern crate fluent_impl;
 
 use fluent_impl::{fluent_impl, fluent_impl_opts};
 
-#[fluent_impl_opts] //~ ERROR
-pub mod simple {
+#[fluent_impl_opts]
+pub mod simple { //~ ERROR
 
     #[derive(Default, PartialEq, Debug)]
     pub struct Simple {

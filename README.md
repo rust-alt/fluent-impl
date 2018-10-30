@@ -1,8 +1,10 @@
-# fluent-impl [![Crate](https://img.shields.io/crates/v/fluent-impl.svg)](https://crates.io/crates/fluent-impl) [![Travis Build Status](https://api.travis-ci.org/rust-alt/fluent-impl.svg?branch=master)](https://travis-ci.org/rust-alt/fluent-impl) [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/rust-alt/fluent-impl?svg=true&branch=master)](https://ci.appveyor.com/project/MoSal/fluent-impl)
+# fluent-impl [![Crate](https://img.shields.io/crates/v/fluent-impl.svg)](https://crates.io/crates/fluent-impl) [-[![Documentation](https://docs.rs/fluent-impl/badge.svg)](https://docs.rs/fluent-impl)-] [![Travis Build Status](https://api.travis-ci.org/rust-alt/fluent-impl.svg?branch=master)](https://travis-ci.org/rust-alt/fluent-impl) [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/rust-alt/fluent-impl?svg=true&branch=master)](https://ci.appveyor.com/project/MoSal/fluent-impl)
 
-
-[**Documentation**](https://rust-alt.github.io/fluent-impl/doc/fluent_impl/)
-
+| ___Linux___ | ___OSX___ | ___Windows___ |
+|:----:|:----:|
+| ![linux-nightly](https://badges.herokuapp.com/travis/rust-alt/fluent-impl?env=BADGE=linux-nightly&label=linux%20nightly) | ![osx-nightly](https://badges.herokuapp.com/travis/rust-alt/fluent-impl?env=BADGE=osx-nightly&label=%20%20osx%20nightly) | ![windows-nightly](https://badges.herokuapp.com/travis/rust-alt/fluent-impl?env=BADGE=windows-nightly&label=%20%20windows%20nightly) |
+| ![linux-beta](https://badges.herokuapp.com/travis/rust-alt/fluent-impl?env=BADGE=linux-beta&label=%20linux%20beta%20%20) | ![osx-beta](https://badges.herokuapp.com/travis/rust-alt/fluent-impl?env=BADGE=osx-beta&label=%20%20%20osx%20beta%20%20) | ![windows-beta](https://badges.herokuapp.com/travis/rust-alt/fluent-impl?env=BADGE=windows-beta&label=%20%20%20windows%20beta%20%20) |
+| ![linux-stable](https://badges.herokuapp.com/travis/rust-alt/fluent-impl?env=BADGE=linux-stable&label=linux%20stable%20) | ![osx-stable](https://badges.herokuapp.com/travis/rust-alt/fluent-impl?env=BADGE=osx-stable&label=%20osx%20%20stable%20) | ![windows-stable](https://badges.herokuapp.com/travis/rust-alt/fluent-impl?env=BADGE=windows-stable&label=%20windows%20%20stable%20) |
 
 A procedural macro that generates chaining methods from non-chaining ones in an impl block.
 
@@ -11,29 +13,6 @@ in search for chain-able methods, and generate chaining methods from them.
 
 Chain-able methods are the ones with `&mut self` as a first argument, and return nothing.
 That's it, there are no other restrictions.
-
-# Detailed Build Status
-
-`fluent_impl` remains nightly-only, for now. The feature `use_extern_macros` has been
-stabilized. And fluent-impl will work in beta and stable when the 1.30 release propagates
-to those channels.
-
-## Travis
-
-| ___Linux___ | ___OSX___ |
-|:----:|:----:|
-| ![linux-nightly](https://badges.herokuapp.com/travis/rust-alt/fluent-impl?env=BADGE=linux-nightly&label=linux%20nightly) | ![osx-nightly](https://badges.herokuapp.com/travis/rust-alt/fluent-impl?env=BADGE=osx-nightly&label=%20%20osx%20nightly) |
-| ![linux-beta](https://badges.herokuapp.com/travis/rust-alt/fluent-impl?env=BADGE=linux-beta&label=%20linux%20beta%20%20) | ![osx-beta](https://badges.herokuapp.com/travis/rust-alt/fluent-impl?env=BADGE=osx-beta&label=%20%20%20osx%20beta%20%20) |
-| ![linux-stable](https://badges.herokuapp.com/travis/rust-alt/fluent-impl?env=BADGE=linux-stable&label=linux%20stable%20) | ![osx-stable](https://badges.herokuapp.com/travis/rust-alt/fluent-impl?env=BADGE=osx-stable&label=%20osx%20%20stable%20) |
-
-## AppVeyor
-
-| Windows | x86_64 | i686 |
-|:-------:|:------:|:----:|
-| __nightly__ | ![nightly x86_64](https://appveyor-matrix-badges.herokuapp.com/repos/MoSal/fluent-impl/branch/master/1) | ![nightly i686](https://appveyor-matrix-badges.herokuapp.com/repos/MoSal/fluent-impl/branch/master/2) |
-| __beta__   | ![beta x86_64](https://appveyor-matrix-badges.herokuapp.com/repos/MoSal/fluent-impl/branch/master/5) | ![beta i686](https://appveyor-matrix-badges.herokuapp.com/repos/MoSal/fluent-impl/branch/master/6) | 
-| __stable__ | ![satble x86_64](https://appveyor-matrix-badges.herokuapp.com/repos/MoSal/fluent-impl/branch/master/3) | ![stable i686](https://appveyor-matrix-badges.herokuapp.com/repos/MoSal/fluent-impl/branch/master/4) |
-
 
 # Usage
 

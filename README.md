@@ -16,14 +16,7 @@ That's it, there are no other restrictions.
 
 # Usage
 
-Add `fluent-impl` to the dependencies in `Cargo.toml`:
-
-``` toml
-[dependencies]
-fluent-impl = "0.1"
-```
-
-Then add the following to the top of `src/lib.rs`:
+Add `fluent-impl` to the dependencies in `Cargo.toml`. Then add the following to the top of `src/lib.rs`:
 
 ``` rust ignore
 extern crate fluent_impl;
